@@ -1,0 +1,34 @@
+package Segitiga;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+/**
+ *
+ * @author Administrator
+ */
+public class Segitiga_BufferedReader {
+    public static void main(String[] args) throws IOException{
+        // Inialisasi variable alas, tinggi dan luas
+        double alas, tinggi, luas;
+        // inialisasi BufferedReader dengan menggunakan inputan Alas
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        // Membritahukan user untuk memasukkan inpitan alas
+        System.out.println("Masukkan nilai Alas :");
+        // Mengambil inputan alas dari user dan disimpan divariable
+        // lalu di parsing/convert ke tipe data double
+        alas = Double.parseDouble(input.readLine());
+        // Membritahukan user untuk memasukkan inpitan alas
+        System.out.println("Masukkan nilai Tinggi :");
+         // Mengambil inputan alas dari user dan disimpan divariable
+        // lalu di parsing/convert ke tipe data double
+        tinggi = Double.parseDouble(input.readLine());
+        //
+        luas = (alas * tinggi) / 2;
+        System.out.println("Luas Segitiga adalah : " + luas);        
+        System.out.println("____________");
+        System.out.println("Nama :Daniel Abdullah Afandi ");
+        System.out.println("NIM  : E31200086 ");
+        System.out.println("Prodi: Manejemen Informatika ");
+        System.out.println("____________");
+    }
+}
